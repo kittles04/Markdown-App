@@ -1,0 +1,49 @@
+$darkAccent: #224b4b;
+$backgroundBase: #619e9e;
+
+body {
+  margin: 10px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: lighten($backgroundBase, 12%);
+  text-align: -webkit-center;
+}
+textarea {
+  width: 50%;
+  min-height: 200px;
+  resize: vertical;
+  outline: none;
+  padding: 5px 100px;
+  font-size: 12px;
+  background: lighten($backgroundBase, 40%);
+}
+#preview {
+  background: lighten($backgroundBase, 40%);
+  width: 75%;
+  text-align: left;
+  code {
+    background: white;
+    padding: 1px 4px 2px 4px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  h1 {
+    border-bottom: 2px solid $darkAccent;
+  }
+
+  h2 {
+    border-bottom: 1px solid $darkAccent;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+
+  td,
+  th {
+    border: 2px solid $darkAccent;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
